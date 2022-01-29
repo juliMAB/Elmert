@@ -15,12 +15,13 @@ public class EnemyController : CharacterMovement, IDamageable
 
     public bool canTakeDamage = true;
 
-    private void FixedUpdate()
+    public void EnemyFixedUpdate()
     {
         direction = Vector2.Lerp(lastDirection, target.position - transform.position, Time.fixedDeltaTime * 1.5f);
         Move(direction);
         lastDirection = direction;
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent(out IDamageable damageableObject))

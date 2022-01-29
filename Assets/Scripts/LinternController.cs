@@ -10,13 +10,12 @@ public class LinternController : MonoBehaviour
 
     public Action<bool> onChangedView = null;
 
-
     private void Start()
     {
         TurnViewOn(true);
     }
 
-    private void Update()
+    public void LinternUpdate()
     {
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;

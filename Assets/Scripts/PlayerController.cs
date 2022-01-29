@@ -10,14 +10,14 @@ public class PlayerController : CharacterMovement, IDamageable
 
     public Action onDie = null;
 
-    private void Update()
+    public void PlayerUpdate()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         AnimatorUpdate(movement);
     }
-    private void FixedUpdate()
+    public void PlayerFixedUpdate()
     {
         Move(movement);
     }

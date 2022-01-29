@@ -5,6 +5,8 @@ using GuilleUtils.PoolSystem;
 
 public class GameplayManager : MonoBehaviour
 {
+    private bool pause = false;
+
     [SerializeField] private EnemiesManager enemiesManager = null;
     [SerializeField] private LinternController linternController = null;
     [SerializeField] private PlayerController playerController = null;
@@ -17,6 +19,22 @@ public class GameplayManager : MonoBehaviour
         };
 
         playerController.onDie = EndGame;
+    }
+
+    private void Update()
+    {
+        if (pause) return;
+
+        playerController.PlayerUpdate();
+        linternController.LinternUpdate();
+    }
+
+    private void FixedUpdate()
+    {
+        if (pause) return;
+
+        playerController.PlayerFixedUpdate();
+        enemiesManager.EnemiesFixedUpdate();
     }
 
     private void EndGame()

@@ -9,6 +9,8 @@ public class EnemiesManager : MonoBehaviour
     private float time = 0f;
     private bool lastSpawnedCute = false;
 
+    private List<EnemyController> activeEnemies = new List<EnemyController>();
+
     [SerializeField] private PoolObjectsManager poolObjectsManager = null;
     [SerializeField] private Transform[] spawnPoints = null;
 
@@ -22,7 +24,7 @@ public class EnemiesManager : MonoBehaviour
     [SerializeField] private float damageRate = 1f;
     [SerializeField] private Transform target = null;
 
-    private void FixedUpdate()
+    public void EnemiesFixedUpdate()
     {
         time += Time.fixedDeltaTime;
 
@@ -32,6 +34,11 @@ public class EnemiesManager : MonoBehaviour
             SpawnEnemies(!lastSpawnedCute, amountEnemies);
             lastSpawnedCute = !lastSpawnedCute;
             time = 0;
+        }
+
+        for (int i = 0; i < activeEnemies.Count; i++)
+        {
+            activeEnemies[i].EnemyFixedUpdate();
         }
     }
 
@@ -72,9 +79,15 @@ public class EnemiesManager : MonoBehaviour
                 EnemyController enemyController = enemy.GetComponent<EnemyController>();
 
                 enemyController.SetData(damageRate, target);
-                enemyController.onDie = poolObjectsManager.DeactivateObject;
+                enemyController.onDie = (a) => 
+                {
+                    poolObjectsManager.DeactivateObject(a);
+                    activeEnemies.Remove(a.GetComponent<EnemyController>());
+                };
 
                 PositionEnemy(enemy);
+
+                activeEnemies.Add(enemyController);
 
                 enemiesAmount--;
 
