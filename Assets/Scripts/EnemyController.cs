@@ -21,13 +21,17 @@ public class EnemyController : CharacterMovement, IDamageable
         Move(direction);
         lastDirection = direction;
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out IDamageable damageableObject))
+        {
+            if (collision.gameObject == target.gameObject)
+                damageableObject.TakeDamage();
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out IDamageable damageableObject))
-        {
-            damageableObject.TakeDamage();
-        }
+        
     }
 
     public void SetData(float damageRate, Transform target)
