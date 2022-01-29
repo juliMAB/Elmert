@@ -15,7 +15,7 @@ TagManager:
   - Damage Obstacle
   - Enemy
   - Player
-  - 
+  - Background
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Cute Layer
-    uniqueID: 2853257369
+  - name: Background
+    uniqueID: 1492763191
     locked: 0
   - name: Dark Layer
     uniqueID: 2484515179
+    locked: 0
+  - name: Cute Layer
+    uniqueID: 2853257369
+    locked: 0
+  - name: Player
+    uniqueID: 3870260403
     locked: 0
