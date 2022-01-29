@@ -5,18 +5,23 @@ using GuilleUtils.PoolSystem;
 
 public class GameplayManager : MonoBehaviour
 {
-    //private bool cuteViewActive = true;
     [SerializeField] private EnemiesManager enemiesManager = null;
     [SerializeField] private LinternController linternController = null;
+    [SerializeField] private PlayerController playerController = null;
 
     private void Start()
     {
         linternController.onChangedView = (cuteView) => 
         {
-            //cuteViewActive = cuteView;
             enemiesManager.SetCanTakeDamageToEnemies(cuteView);
         };
 
-        //cuteViewActive = true;
+        playerController.onDie = EndGame;
+    }
+
+    private void EndGame()
+    {
+        Time.timeScale = 0;
+        Debug.Log("The Game has ended");
     }
 }

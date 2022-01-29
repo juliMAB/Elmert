@@ -3662,6 +3662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiesManager: {fileID: 1029862556}
   linternController: {fileID: 459976499}
+  playerController: {fileID: 1135660192}
 --- !u!4 &417038252
 Transform:
   m_ObjectHideFlags: 0
@@ -15725,7 +15726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2858680492176058176, guid: 6d6cdc1a1f10c464dad32d4109bb4e16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2858680492176058178, guid: 6d6cdc1a1f10c464dad32d4109bb4e16, type: 3}
       propertyPath: m_RootOrder
@@ -15984,7 +15985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8088505139594320982, guid: 2772bca35dcfb5d4fab9d538dc3d162b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2772bca35dcfb5d4fab9d538dc3d162b, type: 3}

@@ -29,10 +29,6 @@ public class EnemyController : CharacterMovement, IDamageable
                 damageableObject.TakeDamage();
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
 
     public void SetData(float damageRate, Transform target)
     {
