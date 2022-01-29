@@ -183,8 +183,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   rb: {fileID: 1494643910870036533}
-  animator: {fileID: 0}
+  animator: {fileID: 1698176568200194062}
+  soundManager: {fileID: 0}
   canTakeDamage: 1
+  audioIndex: 1
 --- !u!50 &1494643910870036533
 Rigidbody2D:
   serializedVersion: 4

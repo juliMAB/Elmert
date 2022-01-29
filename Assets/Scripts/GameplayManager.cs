@@ -12,6 +12,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private LinternController linternController = null;
     [SerializeField] private PlayerController playerController = null;
     [SerializeField] private UIGameplayController uIGameplayController = null;
+    [SerializeField] private SoundManager SoundManager = null;
 
     private void Start()
     {
@@ -21,9 +22,8 @@ public class GameplayManager : MonoBehaviour
         {
             enemiesManager.SetCanTakeDamageToEnemies(cuteView);
         };
-
         enemiesManager.onEnemyDeath = uIGameplayController.UpdateEnemiesKilled;
-
+        enemiesManager.LoadSounds(SoundManager);
         playerController.onDie = EndGame;
         playerController.onDamage = uIGameplayController.UpdateLives;
     }

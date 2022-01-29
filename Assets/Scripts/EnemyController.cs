@@ -13,7 +13,18 @@ public class EnemyController : CharacterMovement, IDamageable
 
     public Action<GameObject> onDie = null;
 
+    public SoundManager soundManager = null;
+
     public bool canTakeDamage = true;
+
+    [SerializeField] private int audioIndex = 0;
+    private void Awake()
+    {
+        if (!soundManager)
+        {
+            soundManager = FindObjectOfType<SoundManager>();
+        }
+    }
 
     public void EnemyFixedUpdate()
     {
@@ -57,7 +68,10 @@ public class EnemyController : CharacterMovement, IDamageable
 
     public void Die()
     {
+        
+        soundManager.SelectAudio(audioIndex,1.0f);
         onDie?.Invoke(gameObject);
         Debug.Log("An enemy has died.");
+
     }
 }

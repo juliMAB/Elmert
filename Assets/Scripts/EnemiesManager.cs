@@ -56,6 +56,17 @@ public class EnemiesManager : MonoBehaviour
             poolObjectsManager.DarkEnemies.objects[i].GetComponent<EnemyController>().canTakeDamage = !toCuteEnemies;
         }
     }
+    public void LoadSounds(SoundManager sm)
+    {
+        for (int i = 0; i < poolObjectsManager.CuteEnemies.objects.Length; i++)
+        {
+            poolObjectsManager.CuteEnemies.objects[i].GetComponent<EnemyController>().soundManager = sm;
+        }
+        for (int i = 0; i < poolObjectsManager.DarkEnemies.objects.Length; i++)
+        {
+            poolObjectsManager.DarkEnemies.objects[i].GetComponent<EnemyController>().soundManager = sm;
+        }
+    }
 
     private void PositionEnemy(GameObject enemy)
     {

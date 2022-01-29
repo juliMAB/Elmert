@@ -183,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   rb: {fileID: 5355541421906338389}
-  animator: {fileID: 0}
+  animator: {fileID: 1394612758265305592}
   canTakeDamage: 1
 --- !u!50 &5355541421906338389
 Rigidbody2D:
