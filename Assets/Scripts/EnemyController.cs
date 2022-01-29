@@ -10,7 +10,9 @@ public class EnemyController : CharacterMovement, IDamageable
     private float life = 100;
     private float damageRate = 1f;
 
-    public Action onDie = null;
+    public Action<GameObject> onDie = null;
+
+    public bool canTakeDamage = true;
 
     private void Update()
     {
@@ -31,17 +33,24 @@ public class EnemyController : CharacterMovement, IDamageable
     }
 
     public void TakeDamage()
-   {
+    {
+        if (!canTakeDamage)
+        {
+            return;
+        }
+
         life -= damageRate;
+        Debug.Log("An enemy has taken damage.");
 
         if (life <= 0)
         {
             Die();
         }
-   }
+    }
 
     public void Die()
     {
-        onDie?.Invoke();
+        onDie?.Invoke(gameObject);
+        Debug.Log("An enemy has died.");
     }
 }

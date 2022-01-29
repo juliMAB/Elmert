@@ -480,7 +480,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiesManager: {fileID: 1029862556}
   linternController: {fileID: 459976499}
-  poolObjectsManager: {fileID: 1642227806}
 --- !u!4 &417038252
 Transform:
   m_ObjectHideFlags: 0
@@ -506,6 +505,7 @@ GameObject:
   - component: {fileID: 459976497}
   - component: {fileID: 459976498}
   - component: {fileID: 459976499}
+  - component: {fileID: 459976500}
   m_Layer: 0
   m_Name: Lintern
   m_TagString: Untagged
@@ -594,6 +594,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuteView: {fileID: 163745159}
   darkView: {fileID: 177237307}
+--- !u!60 &459976500
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459976496}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2, y: 0.2}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0}
+      - {x: -2.22, y: 4.65}
+      - {x: 2.23, y: 4.65}
 --- !u!1 &551962104
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ed59d5fe56af348a33ad412ef548bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poolObjectsManager: {fileID: 1642227806}
   damageRate: 1
 --- !u!4 &1029862557
 Transform:
@@ -933,6 +962,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1591204532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+  m_PrefabInstance: {fileID: 5926779638845976093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &1591204537 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -968,9 +1002,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cuteEnemies:
-    objects: []
+    objects:
+    - {fileID: 2035816020}
   darkEnemies:
-    objects: []
+    objects:
+    - {fileID: 1591204532}
 --- !u!4 &1642227807
 Transform:
   m_ObjectHideFlags: 0
@@ -1015,6 +1051,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2035816020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6579869576839079055, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+  m_PrefabInstance: {fileID: 6579869576953901787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &2035816025 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
