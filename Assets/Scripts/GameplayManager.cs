@@ -10,6 +10,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private EnemiesManager enemiesManager = null;
     [SerializeField] private LinternController linternController = null;
     [SerializeField] private PlayerController playerController = null;
+    [SerializeField] private UIGameplayController uIGameplayController = null;
 
     private void Start()
     {
@@ -18,7 +19,10 @@ public class GameplayManager : MonoBehaviour
             enemiesManager.SetCanTakeDamageToEnemies(cuteView);
         };
 
+        enemiesManager.onEnemyDeath = uIGameplayController.UpdateEnemiesKilled;
+
         playerController.onDie = EndGame;
+        playerController.onDamage = uIGameplayController.UpdateLives;
     }
 
     private void Update()
@@ -39,6 +43,7 @@ public class GameplayManager : MonoBehaviour
 
     private void EndGame()
     {
+        pause = true;
         Time.timeScale = 0;
         Debug.Log("The Game has ended");
     }

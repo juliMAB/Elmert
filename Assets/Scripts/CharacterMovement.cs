@@ -13,9 +13,9 @@ public class CharacterMovement : MonoBehaviour
 
     protected void AnimatorUpdate(Vector3 dir)
     {
-        animator.SetFloat("Horizontal", dir.x);
-        animator.SetFloat("Vertical", dir.y);
-        animator.SetFloat("Speed", dir.sqrMagnitude);
+        //animator.SetFloat("Horizontal", dir.x);
+        //animator.SetFloat("Vertical", dir.y);
+        //animator.SetFloat("Speed", dir.sqrMagnitude);
         
     }
 

@@ -7,8 +7,12 @@ public class PlayerController : CharacterMovement, IDamageable
 {
     private Vector3 movement;
     private int life = 3;
+    private bool coolDownOn = false;
+
+    [SerializeField] private float coolDownTime = 1f;
 
     public Action onDie = null;
+    public Action<int> onDamage = null;
 
     public void PlayerUpdate()
     {
@@ -24,9 +28,20 @@ public class PlayerController : CharacterMovement, IDamageable
 
     public void TakeDamage()
     {
-        life -= 1;
-        Debug.Log("Player has taken damage.");
+        if (coolDownOn) return;
 
+        IEnumerator StartCoolDown()
+        {
+            coolDownOn = true;
+            yield return new WaitForSeconds(coolDownTime);
+            coolDownOn = false;
+        }
+
+        StartCoroutine(StartCoolDown());
+
+        life -= 1;
+        onDamage?.Invoke(life);
+        Debug.Log("Player has taken damage.");
         if (life <= 0)
         {
             Die();

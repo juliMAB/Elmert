@@ -8,6 +8,7 @@ public class EnemiesManager : MonoBehaviour
 {
     private float time = 0f;
     private bool lastSpawnedCute = false;
+    private int enemiesKilled = 0;
 
     private List<EnemyController> activeEnemies = new List<EnemyController>();
 
@@ -23,6 +24,8 @@ public class EnemiesManager : MonoBehaviour
     [Header("Enemies Configuration")]
     [SerializeField] private float damageRate = 1f;
     [SerializeField] private Transform target = null;
+
+    public Action<int> onEnemyDeath = null;
 
     public void EnemiesFixedUpdate()
     {
@@ -68,6 +71,14 @@ public class EnemiesManager : MonoBehaviour
         enemy.transform.position = spawnPoint.position;
     }
 
+    private void OnEnemyDeath(GameObject enemy)
+    {
+        poolObjectsManager.DeactivateObject(enemy);
+        activeEnemies.Remove(enemy.GetComponent<EnemyController>());
+        enemiesKilled++;
+        onEnemyDeath?.Invoke(enemiesKilled);
+    }
+
     private void SpawnEnemies(bool cuteEnemies, int amount)
     {
         IEnumerator SpawnEnemiesAtTime()
@@ -79,11 +90,7 @@ public class EnemiesManager : MonoBehaviour
                 EnemyController enemyController = enemy.GetComponent<EnemyController>();
 
                 enemyController.SetData(damageRate, target);
-                enemyController.onDie = (a) => 
-                {
-                    poolObjectsManager.DeactivateObject(a);
-                    activeEnemies.Remove(a.GetComponent<EnemyController>());
-                };
+                enemyController.onDie = OnEnemyDeath;
 
                 PositionEnemy(enemy);
 
