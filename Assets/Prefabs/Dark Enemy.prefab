@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 526785541}
   - component: {fileID: 526785542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,13 +95,13 @@ GameObject:
   - component: {fileID: 1591204533}
   - component: {fileID: 1494643910870036533}
   - component: {fileID: 7521727840320842660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dark Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5926779639555519659
 Transform:
   m_ObjectHideFlags: 0
@@ -180,10 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfbfa95c56bbcb49a7c01813b9b395c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rb: {fileID: 0}
+  moveSpeed: 4
+  rb: {fileID: 1494643910870036533}
   animator: {fileID: 0}
-  target: {fileID: 0}
+  canTakeDamage: 1
 --- !u!50 &1494643910870036533
 Rigidbody2D:
   serializedVersion: 4
@@ -204,7 +204,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &7521727840320842660
 CircleCollider2D:
   m_ObjectHideFlags: 0

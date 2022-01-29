@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497538147}
   - component: {fileID: 497538148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,13 +95,13 @@ GameObject:
   - component: {fileID: 2035816021}
   - component: {fileID: 5355541421906338389}
   - component: {fileID: 6354014261586565105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cute Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6579869576839079053
 Transform:
   m_ObjectHideFlags: 0
@@ -180,10 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfbfa95c56bbcb49a7c01813b9b395c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rb: {fileID: 0}
+  moveSpeed: 4
+  rb: {fileID: 5355541421906338389}
   animator: {fileID: 0}
-  target: {fileID: 0}
+  canTakeDamage: 1
 --- !u!50 &5355541421906338389
 Rigidbody2D:
   serializedVersion: 4
@@ -204,7 +204,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &6354014261586565105
 CircleCollider2D:
   m_ObjectHideFlags: 0
