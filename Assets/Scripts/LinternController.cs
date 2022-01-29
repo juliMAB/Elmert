@@ -8,6 +8,8 @@ public class LinternController : MonoBehaviour
     [SerializeField] private GameObject cuteView = null;
     [SerializeField] private GameObject darkView = null;
 
+    [SerializeField] private Animator animator = null;
+
     public Action<bool> onChangedView = null;
 
     private void Start()
@@ -45,6 +47,7 @@ public class LinternController : MonoBehaviour
     {
         cuteView.SetActive(isCuteView);
         darkView.SetActive(!isCuteView);
+        animator.SetBool("IsCuteView", isCuteView);
 
         onChangedView?.Invoke(isCuteView);
     }
