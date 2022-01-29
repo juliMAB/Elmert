@@ -6,12 +6,10 @@ public class CharacterMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    private Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
 
-    private Animator animator;
-
-    // Start is called before the first frame update
-
+    [SerializeField] private Animator animator;
+	
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -23,6 +21,7 @@ public class CharacterMovement : MonoBehaviour
         animator.SetFloat("Horizontal", dir.x);
         animator.SetFloat("Vertical", dir.y);
         animator.SetFloat("Speed", dir.sqrMagnitude);
+        
     }
 
     protected void Move(Vector3 dir)
