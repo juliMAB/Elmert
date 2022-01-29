@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using GuilleUtils.PoolSystem;
 
 public class GameplayManager : MonoBehaviour
@@ -14,6 +15,8 @@ public class GameplayManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
+
         linternController.onChangedView = (cuteView) => 
         {
             enemiesManager.SetCanTakeDamageToEnemies(cuteView);
@@ -27,10 +30,15 @@ public class GameplayManager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame(!pause);
+        }
+
         if (pause) return;
 
         playerController.PlayerUpdate();
-        linternController.LinternUpdate();
+        linternController.LinternUpdate();        
     }
 
     private void FixedUpdate()
@@ -43,8 +51,25 @@ public class GameplayManager : MonoBehaviour
 
     private void EndGame()
     {
-        pause = true;
-        Time.timeScale = 0;
+        PauseGame(true);
+        uIGameplayController.DeactivatePauseButton();
         Debug.Log("The Game has ended");
+    }
+
+    public void PauseGame(bool pause)
+    {
+        uIGameplayController.Pause(pause);
+        this.pause = pause;
+        Time.timeScale = pause ? 0 : 1;
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 }

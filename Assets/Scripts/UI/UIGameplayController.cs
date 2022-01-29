@@ -7,6 +7,14 @@ public class UIGameplayController : MonoBehaviour
 {
     [SerializeField] private GameObject[] lives = null;
     [SerializeField] private Text enemiesKilledText = null;
+    [SerializeField] private GameObject pauseButton = null;
+    [SerializeField] private GameObject resumeButton = null;
+    [SerializeField] private GameObject pausePanel = null;
+
+    private void Start()
+    {
+        Pause(false);
+    }
 
     public void UpdateLives(int livesAmount)
     {
@@ -19,5 +27,18 @@ public class UIGameplayController : MonoBehaviour
     public void UpdateEnemiesKilled(int enemiesKilled)
     {
         enemiesKilledText.text = enemiesKilled.ToString();
+    }
+
+    public void Pause(bool pause)
+    {
+        pausePanel.SetActive(pause);
+        pauseButton.SetActive(!pause);
+        resumeButton.SetActive(pause);
+    }
+
+    public void DeactivatePauseButton()
+    {
+        pauseButton.SetActive(false);
+        resumeButton.SetActive(false);
     }
 }
