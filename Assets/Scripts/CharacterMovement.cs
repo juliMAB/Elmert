@@ -10,11 +10,6 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField] private Animator animator;
 	
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
-    }
 
     protected void AnimatorUpdate(Vector3 dir)
     {
