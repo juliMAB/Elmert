@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526785540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.343, y: -1.608, z: 0}
   m_LocalScale: {x: 1, y: 0.17, z: 1}
   m_Children: []
   m_Father: {fileID: 5926779639555519659}
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_SortingLayerID: -1810452117
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.44313726, g: 0.09019608, b: 0.09019608, a: 1}
+  m_Sprite: {fileID: -7717877087894133556, guid: 7d5b27437a325254e8a87870b038c91c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95,13 +95,14 @@ GameObject:
   - component: {fileID: 1591204533}
   - component: {fileID: 1494643910870036533}
   - component: {fileID: 7521727840320842660}
+  - component: {fileID: 1698176568200194062}
   m_Layer: 8
   m_Name: Dark Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5926779639555519659
 Transform:
   m_ObjectHideFlags: 0
@@ -157,8 +158,8 @@ SpriteRenderer:
   m_SortingLayerID: -1810452117
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.4433962, g: 0.08993414, b: 0.08993414, a: 1}
+  m_Sprite: {fileID: -2199316590978451687, guid: d403c034feb2d4c4f893a7699daa4f11, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -221,3 +222,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &1698176568200194062
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5926779639555519657}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a987788a834df8469c80978eba5287a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

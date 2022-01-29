@@ -7429,11 +7429,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
   m_PrefabInstance: {fileID: 836822829}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &849296809 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8952277075090236217, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-  m_PrefabInstance: {fileID: 8952277075855629968}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &860791475
 GameObject:
   m_ObjectHideFlags: 0
@@ -7744,6 +7739,10 @@ PrefabInstance:
     - target: {fileID: 6579869576839079055, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_Name
       value: Cute Enemy (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579869576839079055, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -15716,6 +15715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519659, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15907,38 +15910,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8952277075471233443, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 849296809}
-    - target: {fileID: 8952277075973399816, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: m_Size.x
-      value: 2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952277075973399816, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: m_Size.y
-      value: 2.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952277075973399816, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -5500125973124771357, guid: 31a21cf7dcc771245a52cd3379f50dbd, type: 3}
-    - target: {fileID: 8952277075973399816, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952277076410820148, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952277076410820149, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1090897883222267544, guid: e614ed5cc054e2d418c8c09fede9ce11, type: 3}
-    - target: {fileID: 8952277076410820149, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8952277076951405067, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
       propertyPath: m_Name
       value: Player
