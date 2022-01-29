@@ -6,35 +6,33 @@ using GuilleUtils.PoolSystem;
 
 public class EnemiesManager : MonoBehaviour
 {
+    private float time = 0f;
+    private bool lastSpawnedCute = false;
+
     [SerializeField] private PoolObjectsManager poolObjectsManager = null;
+    [SerializeField] private Transform[] spawnPoints = null;
 
-    private float timeBetweenEnemies = 1f;
+    [Header("Spawn Configuration")]
+    [SerializeField] private float timeBetweenEnemies = 1f;
+    [SerializeField] private float timeBetweenSpawns = 5f;
+    [SerializeField] private int[] spawnAmountLimits = null;
+    [SerializeField] private float minDistanceFromTarget = 6f;
 
+    [Header("Enemies Configuration")]
     [SerializeField] private float damageRate = 1f;
+    [SerializeField] private Transform target = null;
 
-    private void SpawnEnemies(bool cuteEnemies, int amount)
+    private void FixedUpdate()
     {
-        IEnumerator SpawnEnemiesAtTime()//enemy.SetDamageRate(damageRate);
+        time += Time.fixedDeltaTime;
+
+        if (time > timeBetweenSpawns)
         {
-            int enemiesAmount = amount;
-            do
-            {
-                GameObject enemy = poolObjectsManager.ActivateEnemy(cuteEnemies);
-                EnemyController enemyController = enemy.GetComponent<EnemyController>();
-
-                enemyController.SetDamageRate(damageRate);
-                enemyController.onDie = poolObjectsManager.DeactivateObject;
-
-                enemiesAmount--;
-
-                yield return new WaitForSeconds(timeBetweenEnemies);
-            }
-            while (enemiesAmount > 0);
+            int amountEnemies = UnityEngine.Random.Range(spawnAmountLimits[0], spawnAmountLimits[1]);
+            SpawnEnemies(!lastSpawnedCute, amountEnemies);
+            lastSpawnedCute = !lastSpawnedCute;
+            time = 0;
         }
-
-        StopAllCoroutines();
-
-        StartCoroutine(SpawnEnemiesAtTime());
     }
 
     public void SetCanTakeDamageToEnemies(bool toCuteEnemies)
@@ -47,5 +45,46 @@ public class EnemiesManager : MonoBehaviour
         {
             poolObjectsManager.DarkEnemies.objects[i].GetComponent<EnemyController>().canTakeDamage = !toCuteEnemies;
         }
+    }
+
+    private void PositionEnemy(GameObject enemy)
+    {
+        Transform spawnPoint;
+
+        do
+        {
+            int randomNum = UnityEngine.Random.Range(0, spawnPoints.Length);
+            spawnPoint = spawnPoints[randomNum];
+        }
+        while (Vector2.Distance(spawnPoint.position, target.position) < minDistanceFromTarget);
+
+        enemy.transform.position = spawnPoint.position;
+    }
+
+    private void SpawnEnemies(bool cuteEnemies, int amount)
+    {
+        IEnumerator SpawnEnemiesAtTime()
+        {
+            int enemiesAmount = amount;
+            do
+            {
+                GameObject enemy = poolObjectsManager.ActivateEnemy(cuteEnemies);
+                EnemyController enemyController = enemy.GetComponent<EnemyController>();
+
+                enemyController.SetData(damageRate, target);
+                enemyController.onDie = poolObjectsManager.DeactivateObject;
+
+                PositionEnemy(enemy);
+
+                enemiesAmount--;
+
+                yield return new WaitForSeconds(timeBetweenEnemies);
+            }
+            while (enemiesAmount > 0);
+        }
+
+        StopAllCoroutines();
+
+        StartCoroutine(SpawnEnemiesAtTime());
     }
 }

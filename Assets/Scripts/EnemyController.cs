@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class EnemyController : CharacterMovement, IDamageable
 {
-    public Transform target = null;
-
+    private Transform target = null;
     private float life = 100;
     private float damageRate = 1f;
 
@@ -27,9 +26,10 @@ public class EnemyController : CharacterMovement, IDamageable
         }
     }
 
-    public void SetDamageRate(float damageRate)
+    public void SetData(float damageRate, Transform target)
     {
         this.damageRate = damageRate;
+        this.target = target;
     }
 
     public void TakeDamage()
