@@ -34,7 +34,7 @@ public class EnemyController : CharacterMovement, IDamageable
     {
         this.damageRate = damageRate;
         this.target = target;
-
+        life = 100;
         lastDirection = target.position - transform.position;
     }
 

@@ -224,6 +224,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (30)
@@ -506,6 +510,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -676,6 +684,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -762,6 +774,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -934,6 +950,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (25)
@@ -1020,6 +1040,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -1243,6 +1267,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (42)
@@ -1329,6 +1357,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -1716,6 +1748,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -1886,6 +1922,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -1974,6 +2014,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (23)
@@ -2060,6 +2104,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -2180,6 +2228,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (2)
@@ -2266,6 +2318,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -2356,6 +2412,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (47)
@@ -2442,6 +2502,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -2614,6 +2678,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (11)
@@ -2784,6 +2852,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (6)
@@ -2870,6 +2942,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -2960,6 +3036,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (12)
@@ -3046,6 +3126,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -3218,6 +3302,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (16)
@@ -3304,6 +3392,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -3603,6 +3695,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (4)
@@ -3689,6 +3785,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -3779,6 +3879,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -3867,6 +3971,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -3953,6 +4061,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -4335,6 +4447,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (15)
@@ -4503,6 +4619,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -4675,6 +4795,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -4761,6 +4885,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -4933,6 +5061,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -5019,6 +5151,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -5438,6 +5574,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -5524,6 +5664,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -5694,6 +5838,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -5862,6 +6010,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -6116,6 +6268,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (32)
@@ -6202,6 +6358,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -6292,6 +6452,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -6378,6 +6542,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -6548,6 +6716,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -6966,6 +7138,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (34)
@@ -7300,6 +7476,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (26)
@@ -7470,6 +7650,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -7556,6 +7740,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -7808,6 +7996,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -8423,6 +8615,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -8509,6 +8705,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -8845,6 +9045,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (48)
@@ -8925,8 +9129,8 @@ GameObject:
   - component: {fileID: 1135660189}
   - component: {fileID: 1135660188}
   - component: {fileID: 1135660190}
-  - component: {fileID: 1135660192}
   - component: {fileID: 1135660191}
+  - component: {fileID: 1135660192}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -9046,7 +9250,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1135660187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 187034ec659f0cb48a079a52d13ba46e, type: 3}
+  m_Script: {fileID: 11500000, guid: 291b496b9b0549047b51956e1d5d1d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -9153,6 +9357,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -9239,6 +9447,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -9329,6 +9541,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -9415,6 +9631,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -9587,6 +9807,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -9705,6 +9929,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -9793,6 +10021,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -9879,6 +10111,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -10051,6 +10287,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (1)
@@ -10137,6 +10377,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -10227,6 +10471,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (31)
@@ -10313,6 +10561,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -10485,6 +10737,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (7)
@@ -10571,6 +10827,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -10661,6 +10921,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (8)
@@ -10747,6 +11011,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -10837,6 +11105,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -10923,6 +11195,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -11095,6 +11371,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (27)
@@ -11263,6 +11543,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -11517,6 +11801,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -11603,6 +11891,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -11693,6 +11985,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -11779,6 +12075,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -11964,6 +12264,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (38)
@@ -12134,6 +12438,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -12302,6 +12610,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -12539,6 +12851,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (35)
@@ -12627,6 +12943,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (3)
@@ -12713,6 +13033,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -12885,6 +13209,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -12971,6 +13299,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -13482,6 +13814,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (21)
@@ -13568,6 +13904,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -13658,6 +13998,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (40)
@@ -13744,6 +14088,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -13862,6 +14210,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -14034,6 +14386,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -14120,6 +14476,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -14456,6 +14816,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (18)
@@ -14542,6 +14906,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -14729,6 +15097,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14815,6 +15187,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 2035816021, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
@@ -14905,6 +15281,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -14993,6 +15373,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: m_Name
       value: Dark Enemy (28)
@@ -15079,6 +15463,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
@@ -15251,6 +15639,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5355541421906338389, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6579869576839079053, guid: 1929a51a63b46af4e95cecdd42786d6c, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -15398,6 +15790,10 @@ PrefabInstance:
       objectReference: {fileID: 1135660189}
     - target: {fileID: 1591204533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
       propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494643910870036533, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
+      propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5926779639555519657, guid: e084f956c2602fd4aaa259a041c7e55d, type: 3}
