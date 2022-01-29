@@ -34,6 +34,14 @@ public class LinternController : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out IDamageable damageableObject))
+        {
+            damageableObject.TakeDamage();
+        }
+    }
+
     private void TurnViewOn(bool isCuteView)
     {
         cuteView.SetActive(isCuteView);

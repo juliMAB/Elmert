@@ -16,9 +16,11 @@ namespace GuilleUtils.PoolSystem
         public static PoolObjectsManager Instance => instance;
 
         [Header("Pools")]
-        [SerializeField] private PoolObjects enemies;
+        [SerializeField] private PoolObjects cuteEnemies;
+        [SerializeField] private PoolObjects darkEnemies;
 
-        public PoolObjects Enemies => enemies; 
+        public PoolObjects CuteEnemies => cuteEnemies;
+        public PoolObjects DarkEnemies => darkEnemies;
 
         private void Awake()
         {
@@ -34,7 +36,8 @@ namespace GuilleUtils.PoolSystem
                 }
             }
 
-            InitializePool(ref enemies);
+            InitializePool(ref cuteEnemies);
+            InitializePool(ref darkEnemies);
         }
 
         public void DeactivateObject(GameObject gObject)
@@ -53,12 +56,20 @@ namespace GuilleUtils.PoolSystem
                 }
             }
 
-            DeactivateIfPartOfGroup(ref enemies);
+            DeactivateIfPartOfGroup(ref cuteEnemies);
+            DeactivateIfPartOfGroup(ref darkEnemies);
         }
 
-        public GameObject ActivateEnemy()
+        public GameObject ActivateEnemy(bool cuteEnemy)
         {
-            return ActivateObject(ref enemies.pool);
+            if (cuteEnemy)
+            {
+                return ActivateObject(ref cuteEnemies.pool);
+            }
+            else
+            {
+                return ActivateObject(ref darkEnemies.pool);
+            }
         }
 
         private GameObject ActivateObject(ref Queue<GameObject> queue)

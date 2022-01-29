@@ -8,6 +8,7 @@ public class EnemyController : CharacterMovement, IDamageable
     public Transform target = null;
 
     private float life = 100;
+    private float damageRate = 1f;
 
     public Action onDie = null;
 
@@ -16,9 +17,22 @@ public class EnemyController : CharacterMovement, IDamageable
         Move(target.position - transform.position);
     }
 
-   public void TakeDamage(float damage)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out IDamageable damageableObject))
+        {
+            damageableObject.TakeDamage();
+        }
+    }
+
+    public void SetDamageRate(float damageRate)
+    {
+        this.damageRate = damageRate;
+    }
+
+    public void TakeDamage()
    {
-        life -= damage;
+        life -= damageRate;
 
         if (life <= 0)
         {

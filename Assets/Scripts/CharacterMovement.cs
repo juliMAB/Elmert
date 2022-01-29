@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Rigidbody2D rb;
 
     [SerializeField] private Animator animator;
 	
@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour
         
     }
 
-    protected void Move(Vector3 dir)
+    protected void Move(Vector2 dir)
     {
         rb.MovePosition(rb.position + (dir.normalized * moveSpeed * Time.fixedDeltaTime));
     }
