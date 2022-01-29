@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,9 @@ public class LinternController : MonoBehaviour
 {
     [SerializeField] private GameObject cuteView = null;
     [SerializeField] private GameObject darkView = null;
+
+    public Action<bool> onChangedView = null;
+
 
     private void Start()
     {
@@ -34,5 +38,7 @@ public class LinternController : MonoBehaviour
     {
         cuteView.SetActive(isCuteView);
         darkView.SetActive(!isCuteView);
+
+        onChangedView?.Invoke(isCuteView);
     }
 }

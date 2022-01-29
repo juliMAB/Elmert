@@ -17,6 +17,7 @@ public class CharacterMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
+
     protected void AnimatorUpdate(Vector3 dir)
     {
         animator.SetFloat("Horizontal", dir.x);
@@ -24,9 +25,8 @@ public class CharacterMovement : MonoBehaviour
         animator.SetFloat("Speed", dir.sqrMagnitude);
     }
 
-   
     protected void Move(Vector3 dir)
     {
-        rb.MovePosition(rb.position + (dir * moveSpeed * Time.fixedDeltaTime));
+        rb.MovePosition(rb.position + (dir.normalized * moveSpeed * Time.fixedDeltaTime));
     }
 }
