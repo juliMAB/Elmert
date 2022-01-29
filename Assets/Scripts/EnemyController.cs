@@ -8,14 +8,18 @@ public class EnemyController : CharacterMovement, IDamageable
     private Transform target = null;
     private float life = 100;
     private float damageRate = 1f;
+    private Vector2 direction = Vector2.zero;
+    private Vector2 lastDirection = Vector2.zero;
 
     public Action<GameObject> onDie = null;
 
     public bool canTakeDamage = true;
 
-    private void Update()
+    private void FixedUpdate()
     {
-        Move(target.position - transform.position);
+        direction = Vector2.Lerp(lastDirection, target.position - transform.position, Time.fixedDeltaTime * 1.5f);
+        Move(direction);
+        lastDirection = direction;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,6 +34,8 @@ public class EnemyController : CharacterMovement, IDamageable
     {
         this.damageRate = damageRate;
         this.target = target;
+
+        lastDirection = target.position - transform.position;
     }
 
     public void TakeDamage()
