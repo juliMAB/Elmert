@@ -13,10 +13,13 @@ public class UIMainMenuController : MonoBehaviour
 
     [SerializeField] private GameObject mainMenuPanel = null;
     [SerializeField] private GameObject creditsPanel = null;
+    [SerializeField] private UIFader uIFader = null;
+
 
     private void Start()
     {
-        GoToMainMenu();
+        SetActivePanel(PANEL.MAIN_MENU);
+        uIFader.StartFader(false, null);
     }
 
     public void GoToGame()
@@ -27,12 +30,21 @@ public class UIMainMenuController : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        SetActivePanel(PANEL.MAIN_MENU);
+        uIFader.StartFader(true, () => 
+        { 
+            SetActivePanel(PANEL.MAIN_MENU); 
+            uIFader.StartFader(false, null); 
+        });
     }
 
     public void GoToCredits()
     {
-        SetActivePanel(PANEL.CREDITS);
+       
+        uIFader.StartFader(true, () => 
+        { 
+            SetActivePanel(PANEL.CREDITS);
+            uIFader.StartFader(false, null);
+        });
     }
 
     public void ExitGame()

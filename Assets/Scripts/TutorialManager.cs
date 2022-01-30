@@ -49,6 +49,8 @@ public class TutorialManager : MonoBehaviour
                 Destroy(a);
             };
         }
+
+        uIFader.StartFader(false, null);
     }
 
     private void Update()
