@@ -56,3 +56,9 @@ TagManager:
   - name: Text
     uniqueID: 4876693
     locked: 0
+  - name: Cute Eye
+    uniqueID: 2961788137
+    locked: 0
+  - name: Dark Eye
+    uniqueID: 2694808189
+    locked: 0
