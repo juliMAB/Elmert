@@ -72,7 +72,7 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    private void GoToGame()
+    public void GoToGame()
     {
         uIFader.StartFader(true, () => { SceneManager.LoadScene("Game"); });
     }
