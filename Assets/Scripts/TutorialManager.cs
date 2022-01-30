@@ -14,10 +14,18 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private TriggerObject[] endTrigger = null;
     [SerializeField] private TriggerObject startGameTrigger = null;
     [SerializeField] private UIFader uIFader = null;
-    [SerializeField] private EnemyController[] enemies = null;
+    [SerializeField] private List<EnemyController> enemies = new List<EnemyController>();
 
     private void Start()
     {
+        linternController.onChangedView = (cuteView) =>
+        {
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                enemies[i].canTakeDamage = enemies[i].IsCute ? cuteView : !cuteView;
+            }
+        };
+
         for (int i = 0; i < startTrigger.Length; i++)
         {
             startTrigger[i].action = () => cameraFollowsPlayer = true;
@@ -32,9 +40,14 @@ public class TutorialManager : MonoBehaviour
             uIFader.StartFader(true, GoToGame);
         };
 
-        for (int i = 0; i < enemies.Length; i++)
+        for (int i = 0; i < enemies.Count; i++)
         {
-            enemies[i].onDie = (a) => { Destroy(a); };
+            enemies[i].SetData(1, playerController.gameObject.transform);
+            enemies[i].onDie = (a) => 
+            { 
+                enemies.Remove(a.GetComponent<EnemyController>());
+                Destroy(a);
+            };
         }
     }
 
@@ -51,6 +64,11 @@ public class TutorialManager : MonoBehaviour
         if (cameraFollowsPlayer)
         {
             cameraController.FollowPlayer();
+        }
+
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            enemies[i].EnemyFixedUpdate();
         }
     }
 

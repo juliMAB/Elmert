@@ -18,6 +18,10 @@ public class EnemyController : CharacterMovement, IDamageable
     public bool canTakeDamage = true;
 
     [SerializeField] private int audioIndex = 0;
+    [SerializeField] private bool isCute = true;
+
+    public bool IsCute => isCute;
+
     private void Awake()
     {
         if (!soundManager)

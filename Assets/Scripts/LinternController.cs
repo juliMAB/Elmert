@@ -11,6 +11,7 @@ public class LinternController : MonoBehaviour
     [SerializeField] private Animator animator = null;
 
     [SerializeField] private GameObject linternVisual = null;
+    [SerializeField] private float distance = 3;
 
     public Action<bool> onChangedView = null;
 
@@ -35,7 +36,7 @@ public class LinternController : MonoBehaviour
         {
             TurnViewOn(false);
         }
-        Vector3 dir = transform.up * 3;
+        Vector3 dir = transform.up * distance;
         Vector3 pos = transform.position + dir;
         linternVisual.transform.position = pos;
     }
