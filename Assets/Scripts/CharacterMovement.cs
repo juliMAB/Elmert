@@ -19,10 +19,6 @@ public class CharacterMovement : MonoBehaviour
             animator.SetFloat("Horizontal", dir.x);
             animator.SetFloat("Vertical", dir.y);
             animator.SetFloat("Speed", dir.sqrMagnitude);
-            if (dir.x != 0)
-            {
-                transform.localScale = new Vector3(dir.x, transform.localScale.y, transform.localScale.y);
-            }
         }
     }
 
