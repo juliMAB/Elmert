@@ -11,6 +11,7 @@ public class LinternController : MonoBehaviour
     [SerializeField] private Animator animator = null;
 
     [SerializeField] private GameObject linternVisual = null;
+    [SerializeField] private GameObject shadowVisual = null;
     [SerializeField] private float distance = 3;
 
     public Action<bool> onChangedView = null;
@@ -27,6 +28,7 @@ public class LinternController : MonoBehaviour
 
         Vector3 directonToLook = mouseWorldPosition - transform.position;
         transform.up = directonToLook;
+        shadowVisual.transform.up = directonToLook;
 
         if (Input.GetMouseButtonDown(0))
         {
