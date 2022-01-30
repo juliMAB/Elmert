@@ -18,6 +18,7 @@ public class TutorialManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         linternController.onChangedView = (cuteView) =>
         {
             for (int i = 0; i < enemies.Count; i++)
