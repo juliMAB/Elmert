@@ -20,10 +20,11 @@ public class UIGameplayController : MonoBehaviour
 
     public void UpdateLives(int livesAmount)
     {
-        for (int i = 0; i < lives.Length; i++)
-        {
-            lives[i].SetActive(livesAmount > i);
-        }
+        //for (int i = 0; i < lives.Length; i++)
+        //{
+        //    lives[i].SetActive(livesAmount > i);
+        //}
+        lives[livesAmount].GetComponent<Animator>().SetTrigger("active");
     }
 
     public void UpdateEnemiesKilled(int enemiesKilled)
