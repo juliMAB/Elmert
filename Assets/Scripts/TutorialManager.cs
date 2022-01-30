@@ -14,6 +14,7 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private TriggerObject[] endTrigger = null;
     [SerializeField] private TriggerObject startGameTrigger = null;
     [SerializeField] private UIFader uIFader = null;
+    [SerializeField] private EnemyController[] enemies = null;
 
     private void Start()
     {
@@ -30,6 +31,11 @@ public class TutorialManager : MonoBehaviour
         {
             uIFader.StartFader(true, GoToGame);
         };
+
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            enemies[i].onDie = (a) => { Destroy(a); };
+        }
     }
 
     private void Update()
