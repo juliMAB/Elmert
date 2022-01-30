@@ -13,6 +13,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private PlayerController playerController = null;
     [SerializeField] private UIGameplayController uIGameplayController = null;
     [SerializeField] private SoundManager SoundManager = null;
+    [SerializeField] private UIFader uIFader = null;
 
     private void Start()
     {
@@ -26,6 +27,8 @@ public class GameplayManager : MonoBehaviour
         enemiesManager.LoadSounds(SoundManager);
         playerController.onDie = EndGame;
         playerController.onDamage = uIGameplayController.UpdateLives;
+
+        uIFader.StartFader(false, null);
     }
 
     private void Update()
@@ -65,11 +68,12 @@ public class GameplayManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        uIFader.StartFader(true, () => { SceneManager.LoadScene("MainMenu"); });
+        
     }
 
     public void ResetGame()
     {
-        SceneManager.LoadScene("Game");
+        uIFader.StartFader(true, () => { SceneManager.LoadScene("Game"); });
     }
 }

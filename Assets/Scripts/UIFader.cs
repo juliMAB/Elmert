@@ -2,10 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIFader : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer fader = null;
+    [SerializeField] private Image fader = null;
     [SerializeField] private float duration = 1;
 
     public void StartFader(bool fadeToBlack, Action callback)
@@ -16,7 +17,7 @@ public class UIFader : MonoBehaviour
 
             while (time < duration)
             {
-                time += Time.deltaTime;
+                time += Time.unscaledDeltaTime;
                 Color color = Color.black;
                 if (fadeToBlack)
                 {
