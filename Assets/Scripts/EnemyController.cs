@@ -72,7 +72,10 @@ public class EnemyController : CharacterMovement, IDamageable
 
     public void Die()
     {
-        
+        if (soundManager==null)
+        {
+            soundManager = FindObjectOfType<SoundManager>();
+        }
         soundManager.SelectAudio(audioIndex,1.0f);
         Debug.Log("An enemy has died.");
         onDie?.Invoke(gameObject);
