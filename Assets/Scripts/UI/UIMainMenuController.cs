@@ -21,7 +21,7 @@ public class UIMainMenuController : MonoBehaviour
 
     public void GoToGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Tutorial");
     }
 
 
