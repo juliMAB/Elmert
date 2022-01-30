@@ -27,6 +27,8 @@ public class EnemiesManager : MonoBehaviour
 
     public Action<int> onEnemyDeath = null;
 
+    public int EnemiesKilled => enemiesKilled; 
+
     public void EnemiesFixedUpdate()
     {
         time += Time.fixedDeltaTime;

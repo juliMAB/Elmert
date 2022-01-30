@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using GuilleUtils.PoolSystem;
+using GuilleUtils.Score;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private UIGameplayController uIGameplayController = null;
     [SerializeField] private SoundManager SoundManager = null;
     [SerializeField] private UIFader uIFader = null;
+    [SerializeField] private HighscoreManager highscoreManager = null;
 
     private void Start()
     {
@@ -65,12 +67,12 @@ public class GameplayManager : MonoBehaviour
         uIGameplayController.Lose();
         this.pause = pause;
         Time.timeScale = pause ? 0 : 1;
+        highscoreManager.SetScore(enemiesManager.EnemiesKilled);
     }
 
     public void GoToMainMenu()
     {
         uIFader.StartFader(true, () => { SceneManager.LoadScene("MainMenu"); });
-        
     }
 
     public void ResetGame()
