@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &47407211
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -320,7 +320,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8b781ebf4ed73e041923d4336c24c41f, type: 3}
-    m_FontSize: 14
+    m_FontSize: 19
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -331,7 +331,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKIP
+  m_Text: SKIP TUTORIAL
 --- !u!222 &47407212
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35030,6 +35030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8952277075471233443, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
+      propertyPath: distance
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8952277076951405067, guid: 46fba0dfdb282014a9ef26abf881de42, type: 3}
       propertyPath: m_Name
       value: Player
@@ -35291,8 +35295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 228, y: 128.34967}
+  m_AnchoredPosition: {x: -4.0264893, y: 34.226105}
+  m_SizeDelta: {x: 1022.7563, y: 575.8038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &462408173
 MonoBehaviour:
@@ -40641,8 +40645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -142.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -472.2, y: -154.59595}
+  m_SizeDelta: {x: 191.7518, y: 54.1919}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065250991
 MonoBehaviour:
@@ -40721,7 +40725,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -608158939426492286, guid: 83043216f1d57874184310bf5d0968ed, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
