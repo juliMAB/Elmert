@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2858680492176058177}
   - component: {fileID: 6457291367288734905}
   - component: {fileID: 2173851198726533706}
+  - component: {fileID: 6327309990020110258}
   m_Layer: 7
   m_Name: Dark Obstacle
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -1810452117
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 672e5c29623be8b438a1804c4624354d, type: 3}
+  m_Sprite: {fileID: 3828879790192152743, guid: 7536864d29a9b124c9ff80eb91a820c0, type: 3}
   m_Color: {r: 0.4433962, g: 0.08993414, b: 0.08993414, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -122,3 +123,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32cec56f53bf1c343a9a1f0794b75e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &6327309990020110258
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2858680492176058176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c9849ea4d3d2bb4ca6a4cd5adb8be93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

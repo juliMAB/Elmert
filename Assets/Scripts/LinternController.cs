@@ -10,6 +10,8 @@ public class LinternController : MonoBehaviour
 
     [SerializeField] private Animator animator = null;
 
+    [SerializeField] private GameObject linternVisual = null;
+
     public Action<bool> onChangedView = null;
 
     private void Start()
@@ -33,6 +35,9 @@ public class LinternController : MonoBehaviour
         {
             TurnViewOn(false);
         }
+        Vector3 dir = transform.up * 3;
+        Vector3 pos = transform.position + dir;
+        linternVisual.transform.position = pos;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
