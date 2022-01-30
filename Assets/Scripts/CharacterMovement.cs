@@ -20,6 +20,14 @@ public class CharacterMovement : MonoBehaviour
             animator.SetFloat("Vertical", dir.y);
             animator.SetFloat("Speed", dir.sqrMagnitude);
         }
+        if (dir.x<0)
+        {
+            transform.rotation = new Quaternion(0, 180, 0,1);
+        }
+        if (dir.x > 0)
+        {
+            transform.rotation = new Quaternion(0, 0, 0, 1);
+        }
     }
 
     protected void Move(Vector2 dir)

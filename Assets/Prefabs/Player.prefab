@@ -367,8 +367,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd8d8d06240d4041a43224cc121bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuteView: {fileID: 8952277075717116695}
-  darkView: {fileID: 8952277075762295723}
+  cuteView:
+  - {fileID: 8952277075717116695}
+  - {fileID: 8952277076954928272}
+  darkView:
+  - {fileID: 8952277075762295723}
+  - {fileID: 8952277075890189502}
   animator: {fileID: 8952277075090236217}
   linternVisual: {fileID: 5977269459809061194}
 --- !u!60 &8952277075471233444
@@ -1064,7 +1068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8952277076437051945
 Transform:
   m_ObjectHideFlags: 0

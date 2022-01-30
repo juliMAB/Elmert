@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class LinternController : MonoBehaviour
 {
-    [SerializeField] private GameObject cuteView = null;
-    [SerializeField] private GameObject darkView = null;
+    [SerializeField] private GameObject[] cuteView = null;
+    [SerializeField] private GameObject[] darkView = null;
 
     [SerializeField] private Animator animator = null;
 
@@ -50,8 +50,15 @@ public class LinternController : MonoBehaviour
 
     private void TurnViewOn(bool isCuteView)
     {
-        cuteView.SetActive(isCuteView);
-        darkView.SetActive(!isCuteView);
+        
+        for (int i = 0; i < cuteView.Length; i++)
+        {
+            cuteView[i].SetActive(isCuteView);
+        }
+        for (int i = 0; i < darkView.Length; i++)
+        {
+            darkView[i].SetActive(!isCuteView);
+        }
         animator.SetBool("IsCuteView", isCuteView);
 
         onChangedView?.Invoke(isCuteView);
