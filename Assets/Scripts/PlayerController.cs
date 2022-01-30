@@ -8,6 +8,7 @@ public class PlayerController : CharacterMovement, IDamageable
     private Vector3 movement;
     private int life = 3;
     private bool coolDownOn = false;
+    private SoundManager soundManager;
 
     [SerializeField] private float coolDownTime = 1f;
 
@@ -38,7 +39,11 @@ public class PlayerController : CharacterMovement, IDamageable
         }
 
         StartCoroutine(StartCoolDown());
-
+        if (soundManager==null)
+        {
+            soundManager = FindObjectOfType<SoundManager>();
+        }
+        soundManager.SelectAudio(2, 1.0f);
         life -= 1;
         onDamage?.Invoke(life);
         Debug.Log("Player has taken damage.");
