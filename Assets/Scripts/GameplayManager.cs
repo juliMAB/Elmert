@@ -8,6 +8,7 @@ using GuilleUtils.Score;
 public class GameplayManager : MonoBehaviour
 {
     private bool pause = false;
+    private bool gameEnded = false;
 
     [SerializeField] private EnemiesManager enemiesManager = null;
     [SerializeField] private LinternController linternController = null;
@@ -16,6 +17,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private SoundManager SoundManager = null;
     [SerializeField] private UIFader uIFader = null;
     [SerializeField] private HighscoreManager highscoreManager = null;
+    
 
     private void Start()
     {
@@ -31,11 +33,12 @@ public class GameplayManager : MonoBehaviour
         playerController.onDamage = uIGameplayController.UpdateLives;
 
         uIFader.StartFader(false, null);
+        gameEnded = false;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !gameEnded)
         {
             PauseGame(!pause);
         }
@@ -56,7 +59,9 @@ public class GameplayManager : MonoBehaviour
 
     private void EndGame()
     {
+        gameEnded = true;
         PauseGame(true);
+        uIGameplayController.Lose();
         uIGameplayController.DeactivatePauseButton();
         Debug.Log("The Game has ended");
     }
@@ -64,7 +69,6 @@ public class GameplayManager : MonoBehaviour
     public void PauseGame(bool pause)
     {
         uIGameplayController.Pause(pause);
-        uIGameplayController.Lose();
         this.pause = pause;
         Time.timeScale = pause ? 0 : 1;
         highscoreManager.SetScore(enemiesManager.EnemiesKilled);
