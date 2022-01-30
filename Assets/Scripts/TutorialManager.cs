@@ -37,7 +37,7 @@ public class TutorialManager : MonoBehaviour
         
         startGameTrigger.action = () =>
         {
-            uIFader.StartFader(true, GoToGame);
+            GoToGame();
         };
 
         for (int i = 0; i < enemies.Count; i++)
@@ -74,6 +74,6 @@ public class TutorialManager : MonoBehaviour
 
     private void GoToGame()
     {
-        SceneManager.LoadScene("Game");
+        uIFader.StartFader(true, () => { SceneManager.LoadScene("Game"); });
     }
 }
