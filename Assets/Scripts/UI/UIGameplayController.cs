@@ -10,10 +10,12 @@ public class UIGameplayController : MonoBehaviour
     [SerializeField] private GameObject pauseButton = null;
     [SerializeField] private GameObject resumeButton = null;
     [SerializeField] private GameObject pausePanel = null;
+    [SerializeField] private GameObject lostText = null;
 
     private void Start()
     {
         Pause(false);
+        lostText.SetActive(false);
     }
 
     public void UpdateLives(int livesAmount)
@@ -40,5 +42,10 @@ public class UIGameplayController : MonoBehaviour
     {
         pauseButton.SetActive(false);
         resumeButton.SetActive(false);
+    }
+
+    public void Lose()
+    {
+        lostText.SetActive(true);
     }
 }

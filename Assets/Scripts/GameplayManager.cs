@@ -62,6 +62,7 @@ public class GameplayManager : MonoBehaviour
     public void PauseGame(bool pause)
     {
         uIGameplayController.Pause(pause);
+        uIGameplayController.Lose();
         this.pause = pause;
         Time.timeScale = pause ? 0 : 1;
     }
