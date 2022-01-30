@@ -934,7 +934,7 @@ MonoBehaviour:
   animator: {fileID: 8952277075090236217}
   linternVisual: {fileID: 5977269459809061194}
   shadowVisual: {fileID: 2354949374557238657}
-  distance: 1
+  distance: 3
 --- !u!60 &8952277075471233444
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1499,7 +1499,7 @@ GameObject:
   - component: {fileID: 8952277076951405071}
   - component: {fileID: 8952277076951405104}
   - component: {fileID: 5340775377168428595}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291b496b9b0549047b51956e1d5d1d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 8
   rb: {fileID: 8952277076951405071}
   animator: {fileID: 8952277075090236217}
   coolDownTime: 1
