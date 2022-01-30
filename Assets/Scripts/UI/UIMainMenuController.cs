@@ -18,6 +18,7 @@ public class UIMainMenuController : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         SetActivePanel(PANEL.MAIN_MENU);
         uIFader.StartFader(false, null);
     }
