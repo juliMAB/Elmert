@@ -70,8 +70,8 @@ public class EnemyController : CharacterMovement, IDamageable
     {
         
         soundManager.SelectAudio(audioIndex,1.0f);
-        onDie?.Invoke(gameObject);
         Debug.Log("An enemy has died.");
+        onDie?.Invoke(gameObject);
 
     }
 }

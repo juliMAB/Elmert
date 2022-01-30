@@ -1,11 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
+    private bool cameraFollowsPlayer = false;
+
     [SerializeField] private LinternController linternController = null;
     [SerializeField] private PlayerController playerController = null;
+    [SerializeField] private CameraMovementController cameraController = null;
+    [SerializeField] private TriggerObject[] startTrigger = null;
+    [SerializeField] private TriggerObject[] endTrigger = null;
+    [SerializeField] private TriggerObject startGameTrigger = null;
+    [SerializeField] private UIFader uIFader = null;
+    [SerializeField] private EnemyController[] enemies = null;
+
+    private void Start()
+    {
+        for (int i = 0; i < startTrigger.Length; i++)
+        {
+            startTrigger[i].action = () => cameraFollowsPlayer = true;
+        }
+        for (int i = 0; i < endTrigger.Length; i++)
+        {
+            endTrigger[i].action = () => cameraFollowsPlayer = false;
+        }
+        
+        startGameTrigger.action = () =>
+        {
+            uIFader.StartFader(true, GoToGame);
+        };
+
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            enemies[i].onDie = (a) => { Destroy(a); };
+        }
+    }
 
     private void Update()
     {
@@ -16,5 +47,15 @@ public class TutorialManager : MonoBehaviour
     private void FixedUpdate()
     {
         playerController.PlayerFixedUpdate();
+
+        if (cameraFollowsPlayer)
+        {
+            cameraController.FollowPlayer();
+        }
+    }
+
+    private void GoToGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
