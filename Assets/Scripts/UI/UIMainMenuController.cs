@@ -24,7 +24,7 @@ public class UIMainMenuController : MonoBehaviour
 
     public void GoToGame()
     {
-        SceneManager.LoadScene("Tutorial");
+        uIFader.StartFader(true, () => { SceneManager.LoadScene("Tutorial"); });
     }
 
 
